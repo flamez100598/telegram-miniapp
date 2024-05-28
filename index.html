@@ -27,6 +27,7 @@
         Telegram.WebApp.ready();
 
         document.getElementById('sendButton').addEventListener('click', function() {
+            Telegram.WebApp.showAlert("Hello this is my app!")
             // Send data back to the bot
             Telegram.WebApp.sendData("Hello from Mini App!");
         });
