@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Mini App</title>
+    <title>Random Teams Generator</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
-    <h1>Welcome to Telegram Mini App</h1>
-    <button id="sendButton">Send Message to Bot</button>
-
+    <div class="gigacalculator" data-tool="/randomizers/random-team-generator.php" data-width="450">
+        <div class="gigacalctitle">Random Team Tennis Generator</div>
+        <div class="gigacalcfooter">
+          <a href="https://www.gigacalculator.com/randomizers/random-team-generator.php"></a> <a class="gigacalclink"></a>
+        </div>
+      </div>
+      <script defer src="main.js"></script>
     <script>
-        // Initialize the Telegram WebApp
+  
         Telegram.WebApp.ready();
 
-        document.getElementById('sendButton').addEventListener('click', function() {
+        document.getElementById('sendButton').addEventListener('click', function () {
             Telegram.WebApp.showAlert("Hello this is my app!")
             // Send data back to the bot
             Telegram.WebApp.sendData("Hello from Mini App!");
         });
     </script>
 </body>
+
 </html>
